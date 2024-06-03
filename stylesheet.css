@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root{
+    --text: #000000;
+    --background: beige;
+    --primary: darkblue;
+    --shade1: rgb(255, 187, 2,0.4);
+    --shade2: rgb(255, 187, 2,0.3);
+    --shade3: rgb(255, 187, 2,0.2);
+    --shade4: rgb(255, 187, 2,0.1);
+    --shade5: rgb(255, 187, 2, 0.05);
+    --link: blue;
+    --menu: darkgoldenrod;
+
+    
+}
+body.dark {
+    --text: white;
+    --background: #000000;
+    --primary: darkblue;
+    --shade1: rgba(3, 14, 144, 0.4);
+    --shade2: rgba(3, 14, 144, 0.3);
+    --shade3: rgba(3, 14, 144, 0.2);
+    --shade4: rgba(3, 14, 144, 0.1);
+    --shade5: rgba(3, 14, 144, 0.05);
+    --link: beige;
+    --menu: rgb(0, 208, 255);
+  }
+
+*{
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.bold{
+    font-weight: bold;    
+}
+
+a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+header{
+    width: 100%;
+    background-color: var(--background);
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom:1px solid ;
+    margin-top: -20px;
+    overflow-y: hidden;
+    
+}
+
+header .menu{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style: none;   
+   overflow-y: hidden; 
+}
+
+header .menu-item{
+    margin:0px 0px;
+    width: 120px;
+    height: 80px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+#logo{
+    margin-top: 30px;
+}
+
+header #head{
+    font-family: Dancing Script;
+    font-size: 35px;
+    padding-right: 40px;
+}
+
+.bitcoin{
+    background-color: var(--background);
+    width: 40%;
+    height: 870px;
+    margin: 4px 4%;
+    bottom: 200px;
+    top: 60px;
+    border: 1px solid;
+    float: left;
+    border-radius: 20px;
+    
+}
+
+.ethereum{
+    background-color: var(--background);
+    width: 40%;
+    height: 870px;
+    margin: 4px 55%;
+    bottom: 200px;
+    top: 60px;
+    border: 1px solid;
+    border-radius: 20px;
+    padding-bottom: 30px;
+
+}  
+
+article h2{
+    text-align: center;
+    
+}
+
+article{
+    padding: 15px;    
+    font-size: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bitcoin img{
+    width: 45%;
+    padding-left: 27%;
+    padding-top: 20px;
+}
+
+.ethereum img{
+    width: 30%;
+    padding-left: 34%;
+    padding-top: 20px;
+}
+
+
+
+article:hover #bit_text{
+    transform: translateX(150%);
+    transition: 3s;
+} 
+
+article:hover #eth_text{
+    transform: translateX(150%);
+    transition: 3s;
+} 
+
+.graf{
+    top:100%;
+    position: absolute;
+    width: 80%;
+    left: 10% ;
+}
+
+.graf:hover{
+    visibility: visible;
+}
+
+article:hover{
+    box-shadow:var(--shade1) -5px 5px, var(--shade2) -10px 10px, var(--shade3) -15px 15px, var(--shade4) -20px 20px, var(--shade5) -25px 25px;
+    transition: 1.5s;
+    
+}
+
+article:hover .graf{
+    transform: translateY(-110%);
+    transition: 2s;
+}
+
+#footer{
+    background-color: var(--background);
+    margin-top: 262px;
+    padding-left: 80%;
+    
+}
+
+.subheading{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+    border-bottom: 1px solid var(--text);
+    border-radius: 200px;
+}
+
+.projectreason{
+    background-color: var(--background);
+    margin: 35px;
+    height: 230px;
+    border-radius: 40px;
+    border: 1px solid var(--text);
+    z-index: 2;
+}
+
+.projectreason a{
+    color: var(--link);
+}
+
+.projectreason img{
+    width: 7%;
+    margin-left: 50px;
+    padding-left: 430px;
+   
+    position: absolute;
+    z-index: 3;
+    ;
+}
+
+#support{
+    background-color: var(--background);
+    margin-top: 198px;
+    padding-left: 900px;
+}
+
+.menu-item:hover{
+    background-color: var(--menu) ;
+}
+
+#history{
+    background-color: var(--background);
+    margin-top: 150px;
+    width: 40%;
+    margin-left: 4%;
+    border: 1px solid var(--text);
+    border-radius: 20px;
+    height: 200px;
+}
+
+#creation_heading{
+    text-align: center;
+    font-size: 200%;
+    background-image: url(image/background_history.jpg);
+    border-radius: px;
+    margin-top: -1px;
+    color: var(--background);
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.creation_bitcoin{
+    background-color: rgb(34, 34, 143);
+    margin: 25px;
+    border: 3px solid var(--text);
+    border-radius: 20px;
+    color: var(--background);
+}
+
+#bit_text_history{
+    font-size: small;
+}
+
+.creation_bitcoin:hover{
+    margin: 20px;
+    transition: 1s;
+}
+
+#creation_footer{
+    margin-top: 12px;
+    background-color: var(--background);
+    padding-left: 80%;
+}
+
+#selected{
+    background-color: var(--menu);
+}
+
+.menu-item-selecet{
+    background-color: var(--menu);
+}
+
+#eth_text{
+    height: fit-content;
+}
+
