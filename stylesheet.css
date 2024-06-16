@@ -253,6 +253,25 @@ footer{
     bottom: 200px;
 }
 
+#poster{
+    width: 140px;
+}
+
+#projectreason1{
+    background-color: var(--background);
+    margin: 35px;
+    height: 230px;
+    border-radius: 40px;
+    border: 1px solid var(--text);
+    z-index: 2;
+    width: 27%;
+    margin-left: 35%;
+}
+
+#projectreason1 h3, div{
+    text-align: center;
+}
+
 
 @media (max-width:1075px){
     #respons{
@@ -306,3 +325,4 @@ footer{
         margin-left: 24%;
     }
 }
+
