@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
 :root{
     --text: #000000;
     --background: beige;
@@ -14,18 +18,6 @@
 
     
 }
-body.dark {
-    --text: white;
-    --background: #000000;
-    --primary: darkblue;
-    --shade1: rgba(3, 14, 144, 0.4);
-    --shade2: rgba(3, 14, 144, 0.3);
-    --shade3: rgba(3, 14, 144, 0.2);
-    --shade4: rgba(3, 14, 144, 0.1);
-    --shade5: rgba(3, 14, 144, 0.05);
-    --link: beige;
-    --menu: rgb(0, 208, 255);
-  }
 
 *{
     overflow-x: hidden;
@@ -36,6 +28,9 @@ body {
     font-size: 20px;
     margin-left: 0;
     margin-right: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .bold{
@@ -55,7 +50,6 @@ header{
     justify-content: space-around;
     align-items: center;
     border-bottom:1px solid ;
-    margin-top: -20px;
     overflow-y: hidden;
     
 }
@@ -76,6 +70,7 @@ header .menu-item{
     padding-top: 70px;
 }
 
+
 #logo{
     margin-top: 30px;
 }
@@ -91,8 +86,7 @@ header #head{
     width: 40%;
     height: 870px;
     margin: 4px 4%;
-    bottom: 200px;
-    top: 60px;
+    margin-top: 130px;
     border: 1px solid;
     float: left;
     border-radius: 20px;
@@ -104,8 +98,7 @@ header #head{
     width: 40%;
     height: 870px;
     margin: 4px 55%;
-    bottom: 200px;
-    top: 60px;
+    margin-top: 130px;
     border: 1px solid;
     border-radius: 20px;
     padding-bottom: 30px;
@@ -155,10 +148,6 @@ article:hover #eth_text{
     left: 10% ;
 }
 
-.graf:hover{
-    visibility: visible;
-}
-
 article:hover{
     box-shadow:var(--shade1) -5px 5px, var(--shade2) -10px 10px, var(--shade3) -15px 15px, var(--shade4) -20px 20px, var(--shade5) -25px 25px;
     transition: 1.5s;
@@ -166,15 +155,15 @@ article:hover{
 }
 
 article:hover .graf{
-    transform: translateY(-110%);
+    transform: translateY(-180%);
     transition: 2s;
 }
 
-#footer{
+footer{
     background-color: var(--background);
-    margin-top: 262px;
-    padding-left: 80%;
-    
+    height: fit-content;
+    text-align: center;
+    margin-top: auto;
 }
 
 .subheading{
@@ -205,13 +194,6 @@ article:hover .graf{
    
     position: absolute;
     z-index: 3;
-    ;
-}
-
-#support{
-    background-color: var(--background);
-    margin-top: 198px;
-    padding-left: 900px;
 }
 
 .menu-item:hover{
@@ -252,16 +234,8 @@ article:hover .graf{
 }
 
 .creation_bitcoin:hover{
-    margin: 20px;
     transition: 1s;
 }
-
-#creation_footer{
-    margin-top: 12px;
-    background-color: var(--background);
-    padding-left: 80%;
-}
-
 #selected{
     background-color: var(--menu);
 }
@@ -274,3 +248,61 @@ article:hover .graf{
     height: fit-content;
 }
 
+#ig{
+    margin-left:-450px ;
+    bottom: 200px;
+}
+
+
+@media (max-width:1075px){
+    #respons{
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        height: fit-content;
+    }
+    .bitcoin{
+        width: fit-content;
+        
+    }
+    .ethereum{
+        margin: 4px 4%;
+        width: fit-content;
+    }
+    .bitcoin, .ethereum{
+        top: 0;
+        bottom: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #logo{
+        display: none;
+    }
+    
+        
+}
+
+@media (max-width:550px){
+    header{
+        font-size: 20px;
+    }
+
+    header #head{
+        font-size: 24px;
+    }
+        
+}
+
+@media (min-width:620px){
+    .creation_bitcoin{
+        width: 70%;
+        margin-left: 13%;
+    }
+}
+
+@media (min-width:1300px){
+    .creation_bitcoin{
+        width: 50%;
+        margin-left: 24%;
+    }
+}

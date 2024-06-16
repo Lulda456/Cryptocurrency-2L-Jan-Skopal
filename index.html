@@ -5,19 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cryptocurrency</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-    <script src="https://widgets.coingecko.com/coingecko-coin-ticker-widget.js"></script>
-    <script src="https://widgets.coingecko.com/coingecko-coin-ticker-widget.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script>
-        function addDarkmodeWidget() {
-            new Darkmode().showWidget();
-        } window.addEventListener('load', addDarkmodeWidget);
-    </script>
     <header>
         <img id="logo" src="image/logo_header.png" alt="logo" width="200px">
         <div id="head" class="bold">Cryptocurrency</div>
@@ -27,41 +18,43 @@
             <li class="menu-item"><a href="support.html" class="bold">Support</a></li>
         </ul>
     </header>
-    <article class="bitcoin">
-        <h2>Bitcoin</h2>
-        <img src="image/bitcoin.png" alt="Bitcoin logo">
-        <h3>Summary</h3>
-        <div id="bit_text">
-            <div>Bitcoin is the world's first decentralized cryptocurrency. Launched in 2009, it leverages
-                cryptography and peer-to-peer networking to facilitate secure online transactions without the need
-                for intermediaries like banks. Transactions are publicly recorded on a distributed ledger called a
-                blockchain, ensuring transparency and immutability. Bitcoin's value is determined by market forces
-                and has exhibited significant volatility.</div>
-        </div>
-        <div class="graf">
-            <coingecko-coin-ticker-widget coin-id="bitcoin" currency="czk" locale="en"
-                background-color="#f5f5dc"></coingecko-coin-ticker-widget>
-        </div>
-    </article>
-    <article class="ethereum">
-        <h2>Ethereum</h2>
-        <img src="image/ethereum.png" alt="Ethereum logo">
-        <h3>Summary</h3>
-        <div id="eth_text">
-            <div>Ethereum is a decentralized platform that operates like a secure online banking system, but without
-                a central bank. It uses its own digital currency, Ether (ETH), for payments and goes beyond that by
-                enabling "smart contracts" – automated agreements that execute without intermediaries. This opens up
-                a wide range of applications, from finance to supply chain management. While Ether's value
-                fluctuates, the Ethereum platform itself offers a revolutionary approach to secure online
-                transactions and programmable agreements.</div>
-        </div>
-        <div class="graf">
-            <coingecko-coin-ticker-widget coin-id="ethereum" currency="czk" locale="en"
-                background-color="#f5f5dc"></coingecko-coin-ticker-widget>
-        </div>
-    </article>
+    <section id="respons">
+        <article class="bitcoin">
+            <h2>Bitcoin</h2>
+            <img src="image/bitcoin.png" alt="Bitcoin logo">
+            <h3>Summary</h3>
+            <div id="bit_text">
+                <div>Bitcoin is the world's first decentralized cryptocurrency. Launched in 2009, it leverages
+                    cryptography and peer-to-peer networking to facilitate secure online transactions without the need
+                    for intermediaries like banks. Transactions are publicly recorded on a distributed ledger called a
+                    blockchain, ensuring transparency and immutability. Bitcoin's value is determined by market forces
+                    and has exhibited significant volatility.</div>
+            </div>
+            <div class="graf">
+                <coingecko-coin-ticker-widget coin-id="bitcoin" currency="czk" locale="en"
+                    background-color="#f5f5dc"></coingecko-coin-ticker-widget>
+            </div>
+        </article>
+        <article class="ethereum">
+            <h2>Ethereum</h2>
+            <img src="image/ethereum.png" alt="Ethereum logo">
+            <h3>Summary</h3>
+            <div id="eth_text">
+                <div>Ethereum is a decentralized platform that operates like a secure online banking system, but without
+                    a central bank. It uses its own digital currency, Ether (ETH), for payments and goes beyond that by
+                    enabling "smart contracts" – automated agreements that execute without intermediaries. This opens up
+                    a wide range of applications, from finance to supply chain management. While Ether's value
+                    fluctuates, the Ethereum platform itself offers a revolutionary approach to secure online
+                    transactions and programmable agreements.</div>
+            </div>
+            <div class="graf">
+                <coingecko-coin-ticker-widget coin-id="ethereum" currency="czk" locale="en"
+                    background-color="#f5f5dc"></coingecko-coin-ticker-widget>
+            </div>
+        </article>
+    </section>
     <footer>
-        <div id="footer">Jan Skopal</div>
+        <div>Jan Skopal</div>
     </footer>
 
 </html>
