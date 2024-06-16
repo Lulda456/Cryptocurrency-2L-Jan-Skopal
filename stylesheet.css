@@ -155,7 +155,7 @@ article:hover{
 }
 
 article:hover .graf{
-    transform: translateY(-180%);
+    transform: translateY(-170%);
     transition: 2s;
 }
 
